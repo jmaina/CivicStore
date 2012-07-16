@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<?php if ( 'on' == et_get_option('flexible_featured', 'on') && is_home() ) get_template_part( 'includes/featured', 'home' ); ?>
+<?php if ( 'on' == et_get_option('flexible_featured', 'on') 
+	&& is_home() ) get_template_part( 'includes/featured', 'home' ); ?>
 
 <?php if ( 'on' == et_get_option('flexible_quote','on') ) { ?>
 	<div id="quote">
@@ -11,10 +12,11 @@
 
 <?php if ( 'on' == et_get_option('flexible_display_recentwork_section','on') ) { ?>
 	<section id="portfolio" class="clearfix">
-		<h1 class="section-title"><?php esc_html_e( 'Design', 'Flexible' ); ?></h1>
-		<span class="section-tagline"><?php esc_html_e( 'Recent work', 'Flexible' ); ?></span>
+		<h1 class="section-title"><?php esc_html_e( 'Submissions', 'Flexible' ); ?></h1>
+		<span class="section-tagline"><?php esc_html_e( 'Recent Submissions', 'Flexible' ); ?></span>
 		
-		<a href="<?php echo esc_url( et_get_option( 'flexible_more_work_url', '#' ) ); ?>" class="more"><?php esc_html_e( 'More work &raquo;', 'Flexible' ); ?></a>
+		<a href="<?php echo esc_url( et_get_option( 'flexible_more_work_url', '#' ) ); ?>" class="more">
+			<?php esc_html_e( 'More work &raquo;', 'Flexible' ); ?></a>
 		
 		<?php
 			$portfolio_args = array(
@@ -55,8 +57,8 @@
 
 <?php if ( 'on' == et_get_option('flexible_display_fromblog_section','on') && ( 'false' == et_get_option('flexible_blog_style','false') ) ) { ?>
 	<section id="blog" class="clearfix">
-		<h1 class="section-title"><?php esc_html_e( 'Blog', 'Flexible' ); ?></h1>
-		<span class="section-tagline"><?php esc_html_e( 'Recent news', 'Flexible' ); ?></span>
+		<h1 class="section-title"><?php esc_html_e( 'Stories', 'Flexible' ); ?></h1>
+		<span class="section-tagline"><?php esc_html_e( 'Recent Applications', 'Flexible' ); ?></span>
 		
 		<a href="<?php echo esc_url( et_get_option( 'flexible_more_posts_url', '#' ) ); ?>" class="more"><?php esc_html_e( 'More posts &raquo;', 'Flexible' ); ?></a>
 		
