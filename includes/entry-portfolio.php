@@ -22,7 +22,7 @@
 		}
 	}
 ?>
-<div class="portfolio-item" 
+<div style="margin-bottom: -50px" class="portfolio-item" 
 	<?php echo $project_category; ?>data-project_id="<?php echo esc_attr( get_the_ID() ); ?>">
 	<a href="<?php the_permalink(); ?>">
 		<?php
@@ -47,4 +47,9 @@
 			}
 		?>
 	</a>
+	<div style="position: relative;
+			top: -60px;background-color: rgba(255, 255, 255, 0.56);
+			height: 40px;padding: 5px;">  
+			<?php echo get_the_title(); ?>
+			</div>
 </div>
