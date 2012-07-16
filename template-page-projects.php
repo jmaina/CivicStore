@@ -5,6 +5,8 @@ Template Name: Filterable Portfolio
 ?>
 <?php get_header(); ?>
 
+<?php get_header(); ?>
+
 <?php get_template_part('includes/breadcrumbs', 'page'); ?>
 
 <h1 class="page_title"><?php the_title(); ?></h1>
@@ -14,7 +16,8 @@ Template Name: Filterable Portfolio
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>'.esc_attr__('Pages','Flexible').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-			<?php edit_post_link(esc_attr__('Edit this page','Flexible')); ?>
+			<?php edit_post_link(esc_attr__('Edit this Project','Flexible')); ?>
+			<div align="center"> <?php get_search_form(); ?> </div>
 		<?php endwhile; ?>
 	</div> 	<!-- end .post-content -->
 	<?php

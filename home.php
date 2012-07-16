@@ -1,4 +1,10 @@
+
 <?php get_header(); ?>
+
+<div align="center">
+	<?php get_search_form(); ?>
+</div>
+
 
 <?php if ( 'on' == et_get_option('flexible_featured', 'on') 
 	&& is_home() ) get_template_part( 'includes/featured', 'home' ); ?>
@@ -12,7 +18,7 @@
 
 <?php if ( 'on' == et_get_option('flexible_display_recentwork_section','on') ) { ?>
 	<section id="portfolio" class="clearfix">
-		<h1 class="section-title"><?php esc_html_e( 'Submissions', 'Flexible' ); ?></h1>
+		<h1 class="section-title"><?php esc_html_e( 'Submission', 'Flexible' ); ?></h1>
 		<span class="section-tagline"><?php esc_html_e( 'Recent Submissions', 'Flexible' ); ?></span>
 		
 		<a href="<?php echo esc_url( et_get_option( 'flexible_more_work_url', '#' ) ); ?>" class="more">
