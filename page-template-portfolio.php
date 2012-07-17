@@ -48,6 +48,9 @@ if ( $et_ptemplate_portfolio_size == 3 ) $et_ptemplate_portfolio_class = ' et_po
 				<?php } ?>
 				
 				<div class="post-content">
+					
+					
+					
 					<?php the_content(); ?>
 					
 					<div id="et_pt_portfolio_gallery" class="clearfix responsive<?php echo $et_ptemplate_portfolio_class; ?>">

@@ -14,7 +14,8 @@
 
 <section id="comment-wrap">
 	<?php if ( have_comments() ) : ?>
-		<h1 id="comments" class="page_title"><?php comments_number(esc_html__('0 Comments','Flexible'), esc_html__('1 Comment','Flexible'), '% '.esc_html__('Comments','Flexible') );?></h1>
+		<h1 id="comments" class="page_title">
+			<?php comments_number(esc_html__('0 Comments','Flexible'), esc_html__('1 Comment','Flexible'), '% '.esc_html__('Comments','Flexible') );?></h1>
 			
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 			<div class="comment_navigation_top clearfix">

@@ -65,7 +65,7 @@
 					else echo($primaryNav);
 				?>
 			</nav> <!-- end #top-menu -->
-
+			
 			<?php if ( ( $phone_num = et_get_option('flexible_phone_num') ) && '' != $phone_num ) echo '<span id="phone">' . $phone_num . '</span>'; ?>		
 		</header> 
 		<div id="main-area">
